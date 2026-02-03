@@ -1,0 +1,43 @@
+{
+  "name": "gemini-context",
+  "version": "2.0.0",
+  "description": "Optimize web content for browser-embedded AI agents like Gemini in Chrome",
+  "main": "GeminiContext.js",
+  "browser": "GeminiContext.js",
+  "types": "types/GeminiContext.d.ts",
+  "files": [
+    "GeminiContext.js",
+    "types/"
+  ],
+  "scripts": {
+    "test": "echo \"Open agentic_visibility_lab.html in Chrome to test\"",
+    "lint": "echo \"No linter configured yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beekmarks/gemini-context.git"
+  },
+  "keywords": [
+    "gemini",
+    "chrome",
+    "ai",
+    "browser",
+    "context",
+    "llm",
+    "semantic",
+    "seo",
+    "schema",
+    "json-ld",
+    "accessibility",
+    "ux"
+  ],
+  "author": "Stephen McCall <stephen.mccall@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beekmarks/gemini-context/issues"
+  },
+  "homepage": "https://github.com/beekmarks/gemini-context#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
