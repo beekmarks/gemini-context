@@ -9,6 +9,10 @@
 
 ## What is this?
 
+[![Watch the Video](https://vumbnail.com/1161458958.jpg)](https://vimeo.com/1161458958)
+
+▶️ **[Watch the Introduction Video](https://vimeo.com/1161458958)**
+
 GeminiContext.js is a client-side library that helps web developers optimize their pages for browser-embedded AI agents like Google's Gemini in Chrome. It creates a "Shadow Context Layer" — content that is invisible to human users but readable by AI assistants.
 
 ### The Problem
