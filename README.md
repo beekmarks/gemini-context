@@ -95,7 +95,7 @@ Elements with `opacity: 0.01` remain in the Layout Tree (readable by AI) but are
 
 This repo includes a fully playable demo game that showcases what's possible with the Shadow Context Layer.
 
-**[▶ Play The Invisible Vault](turing_vault_final.html)** *(requires Chrome with Gemini)*
+**[▶ Play The Invisible Vault](https://www.ungodly.fun/gemini-games/)** *(requires Chrome with Gemini)*
 
 A human player and Gemini work together to unlock a sealed vault. The twist:
 - **The human** can type commands but can't see the room

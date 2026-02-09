@@ -10,7 +10,9 @@ All notable updates to the **gemini-context** repository, in reverse chronologic
 
 A fully playable demo game has been added that showcases the Shadow Context Layer in action. A human player and Google's Gemini AI work together in real time to solve puzzles and unlock a sealed vault.
 
-**File:** [`turing_vault_final.html`](turing_vault_final.html)
+**Play it live:** [ungodly.fun/gemini-games](https://www.ungodly.fun/gemini-games/) *(requires Chrome with Gemini)*
+
+**Source:** [`turing_vault_final.html`](turing_vault_final.html)
 
 #### How It Works
 
