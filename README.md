@@ -86,6 +86,24 @@ Elements with `opacity: 0.01` remain in the Layout Tree (readable by AI) but are
 - **[Integration Guide](GeminiContext_Integration_Guide.md)** — Full API reference and framework examples
 - **[Developer Toolkit](AI_UX_Developer_Toolkit.md)** — Deep dive into the architecture and Chromium internals
 - **[Interactive Lab](agentic_visibility_lab.html)** — Test the techniques in your browser
+- **[Cooperative AI Game Developer Guide](Cooperative_AI_Game_Developer_Guide.md)** — Build your own human-AI cooperative games
+- **[Invisible Vault Technical Breakdown](Invisible_Vault_Technical_Breakdown.md)** — How the demo game works under the hood
+
+---
+
+## 🔐 The Invisible Vault — Cooperative AI Escape Room
+
+This repo includes a fully playable demo game that showcases what's possible with the Shadow Context Layer.
+
+**[▶ Play The Invisible Vault](turing_vault_final.html)** *(requires Chrome with Gemini)*
+
+A human player and Gemini work together to unlock a sealed vault. The twist:
+- **The human** can type commands but can't see the room
+- **The AI** can see the room (via the shadow layer) but can't type
+
+The game features a red-herring puzzle, dynamic context updates, and a multi-step solution path that demonstrates real-time human-AI cooperation through invisible DOM content.
+
+**Want to build your own?** Read the **[Cooperative AI Game Developer Guide](Cooperative_AI_Game_Developer_Guide.md)** for architecture patterns, puzzle mechanics, and a full starter template.
 
 ---
 
