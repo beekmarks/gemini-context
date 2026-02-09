@@ -80,9 +80,164 @@
             overflow: hidden;
             pointer-events: none;
         }
+
+        /* =========================================
+           MODAL OVERLAY
+           ========================================= */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.92);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .modal-content {
+            background: #1a1a2e;
+            border: 2px solid #33ff33;
+            border-radius: 12px;
+            max-width: 560px;
+            width: 90%;
+            padding: 2.5rem;
+            box-shadow: 0 0 40px rgba(51, 255, 51, 0.15);
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            color: #33ff33;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-badge {
+            display: inline-block;
+            background: rgba(255, 165, 0, 0.15);
+            border: 1px solid #f97316;
+            color: #f97316;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .modal-content p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .modal-steps {
+            text-align: left;
+            margin: 1.5rem 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .modal-steps li {
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #2a2a3e;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .modal-steps li:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            background: #33ff33;
+            color: #0d0d0d;
+            font-weight: bold;
+            min-width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .modal-warning {
+            background: rgba(255, 51, 51, 0.1);
+            border: 1px solid #ff3333;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .modal-btn {
+            background: #33ff33;
+            color: #0d0d0d;
+            border: none;
+            padding: 0.85rem 2.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .modal-btn:hover {
+            background: #2be02b;
+            box-shadow: 0 0 20px rgba(51, 255, 51, 0.4);
+        }
     </style>
 </head>
 <body>
+
+    <!-- MODAL OVERLAY -->
+    <div id="intro-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>⚡ The Invisible Vault</h2>
+            <span class="modal-badge">Interactive Demo</span>
+            <p>
+                This is a demonstration of cooperative human-AI gameplay using the
+                Shadow Context Layer technique. You and Google's Gemini AI will work
+                together to solve puzzles and unlock the vault.
+            </p>
+            <div class="modal-warning">
+                ⚠️ Requires <strong>Google Chrome</strong> with <strong>Gemini</strong> enabled.
+                This demo will not work in other browsers.
+            </div>
+            <ol class="modal-steps">
+                <li>
+                    <span class="step-number">1</span>
+                    <span>Click the <strong>Gemini ✦ button</strong> in the upper-right corner of Chrome to open the Gemini side panel.</span>
+                </li>
+                <li>
+                    <span class="step-number">2</span>
+                    <span>Ask Gemini: <strong>"What do you see on this page?"</strong></span>
+                </li>
+                <li>
+                    <span class="step-number">3</span>
+                    <span>Gemini will read hidden context and give you command codes. Paste them into the terminal.</span>
+                </li>
+                <li>
+                    <span class="step-number">4</span>
+                    <span>Work together to unlock the vault!</span>
+                </li>
+            </ol>
+            <button class="modal-btn" onclick="document.getElementById('intro-modal').style.display='none'; document.getElementById('command-input').focus();">BEGIN MISSION</button>
+        </div>
+    </div>
 
     <div class="status-header">
         <span>SYSTEM: ONLINE</span>
