@@ -26,19 +26,7 @@ A fully playable demo game has been added that showcases the Shadow Context Laye
 
 ---
 
-### 🚀 Intro Modal Overlay
-
-An instructional modal overlay was added to The Invisible Vault so new players understand the requirements and how to play before the game begins.
-
-**What it includes:**
-
-- Chrome + Gemini requirement warning
-- Step-by-step instructions (open Gemini panel → ask what it sees → paste commands → solve together)
-- "BEGIN MISSION" button that dismisses the modal and focuses the command input
-
----
-
-### 📖 Cooperative AI Game Developer Guide
+###  Cooperative AI Game Developer Guide
 
 A comprehensive guide for developers who want to build their own cooperative human-AI games using the Shadow Context Layer technique.
 
